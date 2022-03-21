@@ -20,12 +20,12 @@ public abstract class FinishedState implements State {
 
     @Override
     public final State drawCard(Card card) {
-        throw new IllegalStateException("턴이 이미 종료되었습니다.");
+        throw new UnsupportedOperationException("턴이 이미 종료되었습니다.");
     }
 
     @Override
     public State stay() {
-        throw new IllegalStateException("턴이 이미 종료되었습니다.");
+        throw new UnsupportedOperationException("턴이 이미 종료되었습니다.");
     }
 
     @Override

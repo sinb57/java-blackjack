@@ -32,12 +32,12 @@ public final class InitialState extends PlayState {
 
     @Override
     public PlayState drawCard(final Card card) {
-        throw new IllegalStateException("카드를 뽑을 준비가 되지 않았습니다.");
+        throw new UnsupportedOperationException("카드를 뽑을 준비가 되지 않았습니다.");
     }
 
     @Override
     public State stay() {
-        throw new IllegalStateException("턴이 시작하지 않았습니다.");
+        throw new UnsupportedOperationException("턴이 시작하지 않았습니다.");
     }
 
     @Override
